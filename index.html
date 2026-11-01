@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F5F6F2">
+  <meta name="description" content="Dramivio. One more episode. An expressive short-drama app concept, designed as an interactive portfolio experience and built with Cineview.">
+  <meta property="og:title" content="Dramivio — One more episode.">
+  <meta property="og:description" content="Big stories. Small screens. Explore an expressive app experience, built with Cineview.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alienmu.github.io/dramivio-landing/">
+  <meta property="og:image" content="https://alienmu.github.io/dramivio-landing/assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Dramivio — One more episode.</title>
+  <link rel="icon" href="./assets/dramivio-logo.png" type="image/png">
+  <link rel="preload" as="font" type="font/otf" href="./assets/fonts/display-bold.otf" crossorigin>
+  <link rel="preconnect" href="https://dramivio-docs.pages.dev">
+  <link rel="preload" as="image" href="https://dramivio-docs.pages.dev/design/assets/covers.png">
+  <script>(function(s){if(s&&s('selector(:has(*))')&&s('width:1lh')&&s('color:color-mix(in srgb,red,red)'))document.documentElement.classList.add('cv-js')})(window.CSS&&CSS.supports);</script>
+  <link rel="stylesheet" href="./assets/vendor/cineview/cineview.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-en="Skip to content" data-zh="跳至正文">Skip to content</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 13 8-13 8Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.7 4.7a5.5 5.5 0 0 0-7.8 0L12 5.8l-.9-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.7-8.5a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <a class="brand" href="#opening" aria-label="Dramivio home"><img src="./assets/dramivio-logo.png" width="38" height="38" alt=""><span>Dramivio<span class="brand-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="scene-link" href="#stories"><span class="nav-number">02</span><span data-en="THE STORIES" data-zh="故事">THE STORIES</span></a><a class="scene-link" href="#app"><span class="nav-number">03</span><span data-en="THE DETAILS" data-zh="细节">THE DETAILS</span></a><a class="scene-link" href="#finale"><span class="nav-number">04</span><span data-en="THE PROJECT" data-zh="项目">THE PROJECT</span></a></nav>
+    <div class="header-actions"><button id="language-toggle" class="language-toggle" aria-label="Switch to Chinese"><span class="language-dot"></span><span id="language-label">中文</span></button><a href="https://github.com/AlienMu/dramivio-landing" class="header-source" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub"><svg class="icon"><use href="#i-up-right"/></svg></a></div>
+  </header>
+
+  <main id="main">
+    <cv-stage id="experience" input="scroll" design-width="1440">
+      <cv-scene id="opening" class="scene scene-opening" zone theme="paper">
+        <cv-animate id="opening-duration" class="timeline-control" name="durationanchor" duration="1600" aria-hidden="true"></cv-animate>
+        <cv-animate id="opening-brand-time" class="timeline-control" name="brand" duration="1" at="6% 76%" aria-hidden="true"></cv-animate>
+        <cv-animate id="opening-posters-time" class="timeline-control" name="posters" duration="1" at="8% 86%" aria-hidden="true"></cv-animate>
+        <cv-animate id="opening-copy-time" class="timeline-control" name="copy" duration="1" at="45% 88%" aria-hidden="true"></cv-animate>
+        <div class="scene-canvas opening-canvas">
+          <div class="opening-topline"><span class="eyebrow" data-en="BIG STORIES. SMALL SCREENS." data-zh="小屏幕，大故事。">BIG STORIES. SMALL SCREENS.</span><span class="eyebrow opening-edition">APP EXPERIENCE / VOL. 01</span></div>
+          <div class="opening-poster poster-back-one" aria-hidden="true"><div class="art art-2"><span class="art-number">03</span></div></div>
+          <div class="opening-poster poster-back-two" aria-hidden="true"><div class="art art-3"><span class="art-number">04</span></div></div>
+          <h1 class="opening-brand">DRAMIVIO<span class="brand-square" aria-hidden="true"></span></h1>
+          <div class="opening-poster poster-front-one" aria-hidden="true"><div class="art art-0"><span class="poster-label">A LITTLE ROMANCE.</span></div></div>
+          <div class="opening-poster poster-front-two" aria-hidden="true"><div class="art art-1"><span class="poster-label">AN UNEXPECTED TURN.</span></div></div>
+          <span class="opening-star" aria-hidden="true">✳</span>
+          <div class="opening-copy"><p class="opening-tagline" data-en="ONE MORE EPISODE." data-zh="再看一集。">ONE MORE EPISODE.</p><p class="opening-description" data-en="For the almost-kisses, the plot twists, and the stories you can’t leave behind." data-zh="为将近未近的心动，为猜不到的反转，为那些舍不得放下的故事。">For the almost-kisses, the plot twists, and the stories you can’t leave behind.</p></div>
+          <div class="opening-bottom"><span class="eyebrow"><span class="section-number">01 / 04</span><span data-en="A LITTLE ESCAPE, EVERY DAY" data-zh="让每一天，多一点故事">A LITTLE ESCAPE, EVERY DAY</span></span><a class="scroll-invitation" href="#stories"><span data-en="SCROLL TO GET LOST" data-zh="向下，走进故事">SCROLL TO GET LOST</span><span class="scroll-arrow">↓</span></a></div>
+        </div>
+      </cv-scene>
+
+      <cv-scene id="stories" class="scene scene-stories" theme="paper">
+        <section class="gallery-section section-wrap" aria-labelledby="gallery-title">
+          <div class="section-topline"><span class="eyebrow"><span class="section-number">02 / 04</span><span data-en="THE STORY COLLECTION" data-zh="故事，在这里发生">THE STORY COLLECTION</span></span><span class="small-asterisk" aria-hidden="true">✳</span></div>
+          <div class="gallery-heading"><h2 id="gallery-title" class="display-heading"><span data-en="PICK YOUR" data-zh="寻找下一部">PICK YOUR</span><br><span class="outline-word" data-en="NEXT" data-zh="心动">NEXT</span> <span data-en="STORY." data-zh="。">STORY.</span></h2><div class="gallery-intro"><p data-en="A chance encounter. A different lifetime. A secret worth following. There’s a whole world in every little story." data-zh="一次偶遇，一段前世，一封藏着秘密的来信。每个小故事里，都装着一个世界。">A chance encounter. A different lifetime. A secret worth following. There’s a whole world in every little story.</p><span class="eyebrow underlined-note" data-en="PICK A POSTER. FOLLOW A FEELING. ↗" data-zh="点击海报，跟着心动走。 ↗">PICK A POSTER. FOLLOW A FEELING. ↗</span></div></div>
+          <div class="poster-wall">
+            <cv-animate class="wall-item wall-1" fx="drift(24px)" on="view(self)"><button class="story-card" data-story="rain" data-art="0" data-title-en="Before the Rain Ends" data-title-zh="雨停之前" data-genre-en="Romance · Urban" data-genre-zh="甜宠 · 都市" data-description-en="Some encounters arrive like the rain: unexpected, impossible to ignore, and gone too soon. A little story about finding the courage to stay." data-description-zh="有些相遇像一场雨，猝不及防，却让人舍不得离开。一个关于心动，也关于勇敢留下的故事。"><span class="story-art art art-0"><span class="story-index">01</span><span class="story-open-icon"><svg class="icon"><use href="#i-up-right"/></svg></span></span><span class="story-caption"><span class="story-title" data-en="Before the Rain Ends" data-zh="雨停之前">Before the Rain Ends</span><span class="story-genre" data-en="ROMANCE / URBAN" data-zh="甜宠 / 都市">ROMANCE / URBAN</span></span></button></cv-animate>
+            <cv-animate class="wall-item wall-2" fx="drift(-18px)" on="view(self)"><button class="story-card" data-story="blue" data-art="1" data-title-en="Out of the Blue" data-title-zh="他从夜色来" data-genre-en="Comeback · Urban" data-genre-zh="逆袭 · 都市" data-description-en="A familiar city. An unfamiliar face. When the past steps out of the shadows, the future takes an unexpected turn." data-description-zh="熟悉的城市，陌生的面孔。当往事从夜色中走来，未来也开始转向。"><span class="story-art art art-1"><span class="story-index">02</span><span class="story-open-icon"><svg class="icon"><use href="#i-up-right"/></svg></span></span><span class="story-caption"><span class="story-title" data-en="Out of the Blue" data-zh="他从夜色来">Out of the Blue</span><span class="story-genre" data-en="COMEBACK / URBAN" data-zh="逆袭 / 都市">COMEBACK / URBAN</span></span></button><span class="wall-word" aria-hidden="true">FEEL<br>EVERY<br>FRAME.</span></cv-animate>
+            <cv-animate class="wall-item wall-3" fx="drift(32px)" on="view(self)"><button class="story-card" data-story="moon" data-art="2" data-title-en="Moon over Chang’an" data-title-zh="长安月未央" data-genre-en="Period · Romance" data-genre-zh="古装 · 甜宠" data-description-en="Beneath the same moon, in another time, a promise waits to be remembered. Step into a world of quiet glances and impossible choices." data-description-zh="另一段时光里，同一轮明月下，有个承诺等待被记起。走进一个藏着眼神、心事与选择的世界。"><span class="story-art art art-2"><span class="story-index">03</span><span class="story-open-icon"><svg class="icon"><use href="#i-up-right"/></svg></span></span><span class="story-caption"><span class="story-title" data-en="Moon over Chang’an" data-zh="长安月未央">Moon over Chang’an</span><span class="story-genre" data-en="PERIOD / ROMANCE" data-zh="古装 / 甜宠">PERIOD / ROMANCE</span></span></button></cv-animate>
+            <cv-animate class="wall-item wall-4" fx="drift(-22px)" on="view(self)"><button class="story-card" data-story="fog" data-art="3" data-title-en="Letters in the Fog" data-title-zh="迷雾来信" data-genre-en="Mystery · Urban" data-genre-zh="悬疑 · 都市" data-description-en="One letter. More questions than answers. Follow a trail of small details into a mystery that gets closer with every chapter." data-description-zh="一封来信，带来更多未解的问题。沿着细微的线索，走进一个逐渐逼近的谜团。"><span class="story-art art art-3"><span class="story-index">04</span><span class="story-open-icon"><svg class="icon"><use href="#i-up-right"/></svg></span></span><span class="story-caption"><span class="story-title" data-en="Letters in the Fog" data-zh="迷雾来信">Letters in the Fog</span><span class="story-genre" data-en="MYSTERY / URBAN" data-zh="悬疑 / 都市">MYSTERY / URBAN</span></span></button></cv-animate>
+            <cv-animate class="wall-item wall-5" fx="drift(20px)" on="view(self)"><button class="story-card" data-story="second-act" data-art="5" data-title-en="Her Second Act" data-title-zh="她的第二幕" data-genre-en="Comeback · Workplace" data-genre-zh="逆袭 · 职场" data-description-en="The first chapter didn’t go to plan. The next one is hers to write. A fresh start, a little courage, and a different kind of leading role." data-description-zh="第一幕没有如愿，下一幕由她书写。一次重新开始，一点勇气，和一个属于自己的主角位置。"><span class="story-art art art-5"><span class="story-index">05</span><span class="story-open-icon"><svg class="icon"><use href="#i-up-right"/></svg></span></span><span class="story-caption"><span class="story-title" data-en="Her Second Act" data-zh="她的第二幕">Her Second Act</span><span class="story-genre" data-en="COMEBACK / WORKPLACE" data-zh="逆袭 / 职场">COMEBACK / WORKPLACE</span></span></button></cv-animate>
+            <cv-animate class="wall-item wall-6" fx="drift(-16px)" on="view(self)"><span class="wall-small-copy" data-en="SOME STORIES FIND YOU." data-zh="总有故事，与你相遇。">SOME STORIES FIND YOU.</span><button class="story-card" data-story="spring" data-art="6" data-title-en="A Slow Spring" data-title-zh="春日慢慢" data-genre-en="Romance · Youth" data-genre-zh="甜宠 · 青春" data-description-en="A season of almosts, ordinary afternoons, and feelings that arrive quietly. Some of the best stories take their time." data-description-zh="一个满是欲言又止的季节，一些平凡的午后，一份悄悄靠近的心意。有些好故事，值得慢慢发生。"><span class="story-art art art-6"><span class="story-index">06</span><span class="story-open-icon"><svg class="icon"><use href="#i-up-right"/></svg></span></span><span class="story-caption"><span class="story-title" data-en="A Slow Spring" data-zh="春日慢慢">A Slow Spring</span><span class="story-genre" data-en="ROMANCE / YOUTH" data-zh="甜宠 / 青春">ROMANCE / YOUTH</span></span></button></cv-animate>
+          </div>
+          <div class="gallery-bottom"><span class="eyebrow" data-en="PREVIEW STORIES · ILLUSTRATIVE TITLES &amp; SYNOPSES" data-zh="演示剧目 · 剧名与简介用于产品展示">PREVIEW STORIES · ILLUSTRATIVE TITLES &amp; SYNOPSES</span><a href="#app" class="text-link"><span data-en="Behind the experience" data-zh="走进体验背后">Behind the experience</span><svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        </section>
+      </cv-scene>
+
+      <cv-scene id="app" class="scene scene-app" zone theme="sage">
+        <cv-animate id="phone-duration" class="timeline-control" name="durationanchor" duration="1800" aria-hidden="true"></cv-animate>
+        <cv-animate id="phone-assembly-time" class="timeline-control" name="assembly" duration="1" at="10% 78%" aria-hidden="true"></cv-animate>
+        <cv-animate id="phone-copy-time" class="timeline-control" name="copy" duration="1" at="65% 92%" aria-hidden="true"></cv-animate>
+        <div class="scene-canvas phone-canvas">
+          <div class="phone-scene-topline"><span class="eyebrow"><span class="section-number">03 / 04</span><span data-en="THOUGHTFULLY PUT TOGETHER" data-zh="为体验，细心编排">THOUGHTFULLY PUT TOGETHER</span></span><span class="eyebrow" data-en="THE APP, UNFOLDED" data-zh="展开 App 的每一层">THE APP, UNFOLDED</span></div>
+          <div class="assembly-copy"><h2 class="display-heading"><span data-en="EVERY" data-zh="每个">EVERY</span><br><span class="outline-word" data-en="DETAIL," data-zh="细节，">DETAIL,</span><br><span data-en="IN PLACE." data-zh="恰到好处。">IN PLACE.</span></h2><p data-en="From the first discovery to the next chapter. Little details, carefully considered. One experience that feels right." data-zh="从发现第一部好剧，到接上下一章。细小的地方，细心地打磨，让每一次操作都恰到好处。">From the first discovery to the next chapter. Little details, carefully considered. One experience that feels right.</p><div class="assembly-legend"><span><b>01</b><span data-en="DISCOVER" data-zh="发现">DISCOVER</span></span><span><b>02</b><span data-en="KEEP" data-zh="收藏">KEEP</span></span><span><b>03</b><span data-en="CONTINUE" data-zh="接着看">CONTINUE</span></span></div></div>
+          <figure class="assembly-figure" aria-label="Dramivio interface layers assemble into a complete phone as you scroll"><div class="assembly-orbit"></div><div class="phone-composition" aria-hidden="true">
+            <div class="device-base"><div class="device-camera"></div><div class="device-status"><b>9:41</b><span>▮▮▮ ◔ ▰</span></div><div class="device-brand"><img src="./assets/dramivio-logo.png" width="29" height="29" alt=""><strong>Dramivio</strong><span class="device-pill" data-en="FOR YOU" data-zh="为你推荐">FOR YOU</span></div></div>
+            <div class="ui-layer layer-search"><svg class="icon"><use href="#i-search"/></svg><span data-en="Title, character or plot" data-zh="搜剧名、人物或情节">Title, character or plot</span><svg class="icon tiny-arrow"><use href="#i-arrow"/></svg><span class="layer-label" data-en="01 / FIND YOUR STORY" data-zh="01 / 发现你的故事">01 / FIND YOUR STORY</span></div>
+            <div class="ui-layer layer-genres"><span class="active" data-en="For you" data-zh="推荐">For you</span><span data-en="Romance" data-zh="甜宠">Romance</span><span data-en="Mystery" data-zh="悬疑">Mystery</span><span data-en="Period" data-zh="古装">Period</span></div>
+            <div class="ui-layer layer-continue"><span class="continue-art art art-0"></span><span class="continue-copy"><b data-en="Before the Rain Ends" data-zh="雨停之前">Before the Rain Ends</b><span data-en="Episode 12 · 00:42" data-zh="第 12 集 · 00:42">Episode 12 · 00:42</span><span class="device-progress"><span></span></span></span><span class="device-play"><svg class="icon"><use href="#i-play"/></svg></span><span class="layer-label" data-en="03 / RIGHT WHERE YOU LEFT OFF" data-zh="03 / 接着上次的精彩">03 / RIGHT WHERE YOU LEFT OFF</span></div>
+            <div class="ui-layer layer-catalog"><div class="device-section"><b data-en="Recommended" data-zh="推荐">Recommended</b><span data-en="View all ↗" data-zh="查看更多 ↗">View all ↗</span></div><div class="device-posters"><div><span class="device-poster art art-0"><span class="device-heart"><svg class="icon"><use href="#i-heart"/></svg></span></span><b data-en="Before the Rain Ends" data-zh="雨停之前">Before the Rain Ends</b><small data-en="Romance · Urban" data-zh="甜宠 · 都市">Romance · Urban</small></div><div><span class="device-poster art art-1"><span class="device-heart filled"><svg class="icon"><use href="#i-heart"/></svg></span></span><b data-en="Out of the Blue" data-zh="他从夜色来">Out of the Blue</b><small data-en="Comeback · Urban" data-zh="逆袭 · 都市">Comeback · Urban</small></div></div><span class="layer-label" data-en="02 / KEEP WHAT YOU LOVE" data-zh="02 / 收藏你的心动">02 / KEEP WHAT YOU LOVE</span></div>
+            <div class="ui-layer layer-navigation"><span class="active"><svg class="icon"><use href="#i-home"/></svg><small data-en="Home" data-zh="主页">Home</small></span><span><svg class="icon"><use href="#i-heart"/></svg><small data-en="Watchlist" data-zh="追剧">Watchlist</small></span><span><svg class="icon"><use href="#i-download"/></svg><small data-en="Downloads" data-zh="缓存">Downloads</small></span><span><svg class="icon"><use href="#i-user"/></svg><small data-en="Me" data-zh="我的">Me</small></span></div>
+          </div><figcaption class="assembly-caption"><span class="caption-open" data-en="SCROLL TO BRING IT ALL TOGETHER ↓" data-zh="向下滚动，让每一层各就其位 ↓">SCROLL TO BRING IT ALL TOGETHER ↓</span><span class="caption-complete" data-en="YOUR STORIES. ALL IN ONE PLACE." data-zh="你的故事，都在这里。">YOUR STORIES. ALL IN ONE PLACE.</span></figcaption></figure>
+        </div>
+      </cv-scene>
+
+      <cv-scene id="finale" class="scene scene-finale" theme="paper">
+        <footer class="finale section-wrap">
+          <div class="section-topline"><span class="eyebrow"><span class="section-number">04 / 04</span><span data-en="THE NEXT CHAPTER" data-zh="下一章，由此开始">THE NEXT CHAPTER</span></span><a class="back-top" href="#opening"><span data-en="BACK TO THE START" data-zh="回到开场">BACK TO THE START</span> ↑</a></div>
+          <div class="finale-intro"><p class="finale-tagline" data-en="ONE MORE EPISODE." data-zh="再看一集。">ONE MORE EPISODE.</p><p data-en="A short-drama app, a fresh perspective. A little exploration of stories, interfaces, and the space between." data-zh="一款短剧 App，一种新的表达。关于故事、界面，以及它们之间的想象。">A short-drama app, a fresh perspective. A little exploration of stories, interfaces, and the space between.</p></div>
+          <h2 class="finale-brand">DRAMIVIO<span aria-hidden="true">✳</span></h2>
+          <div class="project-links"><a class="project-link" href="https://github.com/AlienMu/dramivio-landing" target="_blank" rel="noopener noreferrer"><span><small data-en="EXPLORE THE BUILD" data-zh="探索这个项目">EXPLORE THE BUILD</small><strong data-en="VIEW SOURCE" data-zh="查看源码">VIEW SOURCE</strong></span><svg class="icon"><use href="#i-up-right"/></svg></a><a class="project-link" href="https://alienmmm.com/" target="_blank" rel="noopener noreferrer"><span><small data-en="MEET THE CREATOR" data-zh="认识创作者">MEET THE CREATOR</small><strong data-en="MORE WORK" data-zh="更多作品">MORE WORK</strong></span><svg class="icon"><use href="#i-up-right"/></svg></a></div>
+          <div class="footer-line"><a class="footer-brand" href="#opening"><img src="./assets/dramivio-logo.png" width="30" height="30" alt=""><span>Dramivio.</span></a><span data-en="A PORTFOLIO PROJECT BY ALIEN · 2026" data-zh="ALIEN 的作品集项目 · 2026">A PORTFOLIO PROJECT BY ALIEN · 2026</span><a href="https://github.com/AlienMu/cineview" target="_blank" rel="noopener noreferrer">MADE WITH CINEVIEW ↗</a></div>
+        </footer>
+      </cv-scene>
+    </cv-stage>
+  </main>
+
+  <dialog id="story-dialog" class="story-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"><div class="dialog-layout"><div id="dialog-art" class="dialog-art art art-0"></div><div class="dialog-copy"><button id="dialog-close" class="dialog-close" aria-label="Close story"><svg class="icon"><use href="#i-close"/></svg></button><p class="eyebrow" data-en="A LITTLE STORY TO GET LOST IN" data-zh="走进一个小小的故事">A LITTLE STORY TO GET LOST IN</p><p id="dialog-genre" class="dialog-genre"></p><h2 id="dialog-title"></h2><p id="dialog-description" class="dialog-description"></p><p class="dialog-note" data-en="Preview story · Illustrative synopsis for this design concept." data-zh="演示剧目 · 简介为本设计概念创作的示例内容。">Preview story · Illustrative synopsis for this design concept.</p><div class="dialog-pagination"><span id="dialog-position">01 / 06</span><div><button id="dialog-prev" aria-label="Previous story"><svg class="icon"><use href="#i-arrow"/></svg></button><button id="dialog-next" aria-label="Next story"><svg class="icon"><use href="#i-arrow"/></svg></button></div></div></div></div></dialog>
+  <noscript><style>cv-scene[zone]{height:auto!important}cv-scene[zone]::part(shell){position:relative}.phone-canvas{--assembly-progress:1;--copy-progress:1}.language-toggle{display:none}.story-open-icon{display:none}.story-card{cursor:default}</style><p class="noscript-note">Enable JavaScript to explore motion, story details, and language switching. / 开启 JavaScript 可体验动效、故事详情与语言切换。</p></noscript>
+</body>
+</html>
