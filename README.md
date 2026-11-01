@@ -3,7 +3,7 @@
 A bilingual, scroll-driven portfolio presentation for the Dramivio short-drama app concept. Original app artwork and interface details meet oversized typography, an interactive poster collection, and a layered phone assembly.
 
 - **Source:** [AlienMu/dramivio-landing](https://github.com/AlienMu/dramivio-landing)
-- **Intended GitHub Pages URL:** [alienmu.github.io/dramivio-landing](https://alienmu.github.io/dramivio-landing/) — **deployment pending verification**.
+- **Live demo:** [alienmu.github.io/dramivio-landing](https://alienmu.github.io/dramivio-landing/) — published on GitHub Pages from `main` / `/ (root)`.
 - **Visual reference:** [Dramivio design](https://dramivio-docs.pages.dev/design/index.html)
 - **Creator:** [Alien](https://alienmmm.com/)
 
@@ -35,7 +35,7 @@ npm run build
 
 `check` validates the four scene elements, unique HTML IDs, local asset references, fragment links, JavaScript syntax, and relative imports throughout the vendored Cineview modules. It is a structural check; responsive layout, keyboard behavior, scroll animation, and the external poster image also need browser verification.
 
-`build` recreates `dist/` with `index.html`, `styles.css`, `app.js`, `.nojekyll`, and `assets/`. For GitHub Pages, this repository can be served directly from `main` / `/ (root)` because all assets use relative paths and `.nojekyll` is included. The generated `dist/` directory can also be deployed to another static host. The social metadata uses the intended Pages URL above; a successful build does not establish that deployment is live.
+`build` recreates `dist/` with `index.html`, `styles.css`, `app.js`, `.nojekyll`, and `assets/`. For GitHub Pages, this repository can be served directly from `main` / `/ (root)` because all assets use relative paths and `.nojekyll` is included. The generated `dist/` directory can also be deployed to another static host. The social metadata uses the live Pages URL above.
 
 ## Actual Cineview runtime
 
@@ -71,3 +71,9 @@ inkscape assets/social-card.svg --export-type=png --export-filename=assets/socia
 - `prefers-reduced-motion: reduce` removes decorative movement and shows the phone fully assembled. A runtime failure also activates a readable static presentation; a no-JavaScript notice explains unavailable interactions.
 - A skip link, visible focus outlines, semantic buttons, and labeled navigation support keyboard access.
 - Story previews use a native modal `<dialog>`. Opening focuses its close button; focus stays within the modal. Escape, the close button, or an intentional backdrop click closes it, restores the originating poster's focus, and preserves the page scroll position. Previous/next buttons and Left/Right arrow keys browse the six previews.
+
+## Verification
+
+The published page was opened and confirmed to load the actual Cineview runtime with no `cv-error` events. Browser checks covered the desktop opening and reverse scroll, assembled phone state, gallery navigation, story stepping and Escape/focus restoration, Chinese switching and persistence, and responsive 390 × 844, 360 × 640, and 844 × 390 layouts without horizontal overflow. Structural and JavaScript checks pass with `npm run check`.
+
+Reduced-motion and static fallback styles are implemented; device-specific OS preference behavior should also be included in any future release QA.

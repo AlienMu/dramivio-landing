@@ -59,6 +59,8 @@ html[lang="zh-CN"] .display-heading{font-family:var(--body);font-weight:900;lett
   .dialog-art{width:min(calc(100% - 44px),27svh);height:auto;min-height:0;aspect-ratio:3/4;margin:0 auto 20px}
   .dialog-copy{background:var(--paper)}
 }
+/* Leave room for the tagline on common laptop-height displays. */
+@media(min-width:701px) and (min-height:721px) and (max-height:850px){.opening-copy{bottom:12%}.poster-front-two{top:24%}}
 /* A complete static composition is also the accessible motion-reduction path. */
 .static-fallback cv-scene[zone]{height:100svh!important}.static-fallback cv-scene[zone]::part(shell){position:relative;top:auto}.static-fallback .opening-canvas{--brand-progress:0!important;--poster-progress:0!important;--copy-progress:0!important}.static-fallback .phone-canvas{--assembly-progress:1!important;--copy-progress:1!important}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}cv-scene[zone]{height:100svh!important}cv-scene[zone]::part(shell){position:relative;top:auto}.opening-canvas{--brand-progress:0!important;--poster-progress:0!important;--copy-progress:0!important}.phone-canvas{--assembly-progress:1!important;--copy-progress:1!important}.wall-item::part(layer){transform:none!important}.story-card:hover .story-art{transform:none}}
