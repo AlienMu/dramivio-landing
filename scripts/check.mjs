@@ -10,7 +10,7 @@ if (duplicates.length) throw new Error('Duplicate IDs: ' + duplicates.join(', ')
 for (const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
   const ref = match[1];
   if (ref.startsWith('#') && !ids.includes(ref.slice(1))) throw new Error('Broken fragment: ' + ref);
-  if (ref.startsWith('./')) await access(path.resolve(root, ref));
+  if (ref.startsWith('./')) await access(path.resolve(root, ref.split(/[?#]/)[0]));
 }
 for (const match of html.matchAll(/<meta\s+property="og:image"\s+content="([^"]+)"/g)) {
   const image = new URL(match[1]).pathname.split('/assets/')[1];
