@@ -9,6 +9,8 @@ A bilingual, scroll-driven portfolio presentation for the Dramivio short-drama a
 
 This is a portfolio experience. The six story synopses are illustrative demo copy, identified as such in the story dialog. There is no app download, account flow, video playback, or production drama service.
 
+![Dramivio opening scene](docs/preview.png)
+
 ## The four approved scenes
 
 | Scene | Anchor | Experience |
